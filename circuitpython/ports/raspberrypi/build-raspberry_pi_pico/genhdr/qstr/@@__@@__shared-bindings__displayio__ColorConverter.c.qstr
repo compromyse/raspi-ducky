@@ -1,0 +1,8 @@
+Q(dither)
+Q(input_colorspace)
+Q(convert)
+Q(dither)
+Q(make_transparent)
+Q(make_opaque)
+Q(ColorConverter)
+TRANSLATE("color should be an int")

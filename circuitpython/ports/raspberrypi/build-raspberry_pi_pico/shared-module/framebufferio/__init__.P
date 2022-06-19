@@ -1,0 +1,3 @@
+build-raspberry_pi_pico/shared-module/framebufferio/__init__.o: \
+ ../../shared-module/framebufferio/__init__.c
+ ../../shared-module/framebufferio/__init__.c :

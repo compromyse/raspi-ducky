@@ -1,0 +1,3 @@
+build-raspberry_pi_pico/common-hal/watchdog/__init__.o: \
+ common-hal/watchdog/__init__.c
+ common-hal/watchdog/__init__.c :

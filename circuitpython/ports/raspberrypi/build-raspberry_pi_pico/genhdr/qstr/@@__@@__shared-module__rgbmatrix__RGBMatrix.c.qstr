@@ -1,0 +1,6 @@
+Q(RGBMatrix)
+TRANSLATE("No timer available")
+TRANSLATE("Invalid pin")
+TRANSLATE("Invalid argument")
+TRANSLATE("Failed to allocate %q buffer")
+TRANSLATE("Internal error #%d")

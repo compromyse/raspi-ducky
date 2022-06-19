@@ -1,0 +1,3 @@
+TRANSLATE("y value out of bounds")
+TRANSLATE("x value out of bounds")
+TRANSLATE("Maximum x value when mirrored is %d")

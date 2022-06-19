@@ -1,0 +1,5 @@
+Q(usb_connected)
+Q(serial_connected)
+Q(serial_bytes_available)
+Q(run_reason)
+Q(Runtime)

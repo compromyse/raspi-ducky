@@ -1,0 +1,121 @@
+build-raspberry_pi_pico/supervisor/internal_flash.o: \
+ supervisor/internal_flash.c supervisor/internal_flash.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h mpconfigport.h \
+ sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+ ../../py/circuitpy_mpconfig.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdatomic.h \
+ boards/raspberry_pi_pico/mpconfigboard.h /usr/include/newlib/alloca.h \
+ /usr/include/newlib/_ansi.h /usr/include/newlib/newlib.h \
+ /usr/include/newlib/_newlib_version.h /usr/include/newlib/sys/config.h \
+ /usr/include/newlib/machine/ieeefp.h /usr/include/newlib/sys/features.h \
+ /usr/include/newlib/sys/reent.h /usr/include/newlib/_ansi.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+ /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h \
+ /usr/include/newlib/machine/_default_types.h \
+ /usr/include/newlib/sys/lock.h ../../supervisor/flash_root_pointers.h \
+ supervisor/internal_flash_root_pointers.h /usr/include/newlib/string.h \
+ /usr/include/newlib/sys/cdefs.h /usr/include/newlib/sys/_locale.h \
+ /usr/include/newlib/strings.h /usr/include/newlib/sys/string.h \
+ ../../extmod/vfs.h ../../py/lexer.h ../../py/mpconfig.h ../../py/qstr.h \
+ ../../py/misc.h ../../py/mpconfig.h \
+ build-raspberry_pi_pico/genhdr/qstrdefs.enum.h ../../py/reader.h \
+ ../../py/obj.h /usr/include/newlib/assert.h ../../py/mpprint.h \
+ ../../py/runtime0.h ../../supervisor/shared/translate.h ../../py/proto.h \
+ ../../extmod/vfs_fat.h ../../lib/oofatfs/ff.h ../../lib/oofatfs/ffconf.h \
+ build-raspberry_pi_pico/genhdr/flash_info.h ../../py/mphal.h mphalport.h \
+ ../../supervisor/shared/tick.h ../../extmod/virtpin.h ../../py/runtime.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h ../../py/mpstate.h \
+ ../../py/mpthread.h ../../py/nlr.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
+ ../../py/objlist.h ../../py/objexcept.h ../../py/objtuple.h \
+ ../../py/objtraceback.h ../../py/pystack.h ../../supervisor/linker.h \
+ ../../shared-bindings/microcontroller/__init__.h \
+ common-hal/microcontroller/Processor.h \
+ sdk/src/rp2_common/pico_unique_id/include/pico/unique_id.h \
+ sdk/src/common/pico_base/include/pico.h \
+ sdk/src/common/pico_base/include/pico/types.h \
+ sdk/src/common/pico_base/include/pico/assert.h sdk_config/pico/version.h \
+ sdk/src/common/pico_base/include/pico/config.h \
+ sdk_config/pico/config_autogen.h \
+ boards/raspberry_pi_pico/pico-sdk-configboard.h \
+ sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+ sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+ sdk/src/common/pico_base/include/pico/types.h \
+ sdk/src/common/pico_base/include/pico/error.h \
+ ../../shared-bindings/microcontroller/ResetReason.h ../../py/enum.h \
+ ../../shared-bindings/microcontroller/RunMode.h \
+ common-hal/nvm/ByteArray.h common-hal/watchdog/WatchDogTimer.h \
+ ../../shared-bindings/watchdog/WatchDogMode.h \
+ ../../shared-bindings/watchdog/WatchDogTimer.h ../../supervisor/flash.h \
+ ../../supervisor/shared/internal_flash.h ../../supervisor/usb.h \
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+ sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+ sdk/src/rp2_common/hardware_flash/include/hardware/flash.h \
+ sdk/src/common/pico_binary_info/include/pico/binary_info.h \
+ sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h \
+ sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h \
+ sdk/src/common/pico_binary_info/include/pico/binary_info/code.h
+ supervisor/internal_flash.c supervisor/internal_flash.h :
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h mpconfigport.h :
+ sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h :
+ ../../py/circuitpy_mpconfig.h :
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h :
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdatomic.h :
+ boards/raspberry_pi_pico/mpconfigboard.h /usr/include/newlib/alloca.h :
+ /usr/include/newlib/_ansi.h /usr/include/newlib/newlib.h :
+ /usr/include/newlib/_newlib_version.h /usr/include/newlib/sys/config.h :
+ /usr/include/newlib/machine/ieeefp.h /usr/include/newlib/sys/features.h :
+ /usr/include/newlib/sys/reent.h /usr/include/newlib/_ansi.h :
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h :
+ /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h :
+ /usr/include/newlib/machine/_default_types.h :
+ /usr/include/newlib/sys/lock.h ../../supervisor/flash_root_pointers.h :
+ supervisor/internal_flash_root_pointers.h /usr/include/newlib/string.h :
+ /usr/include/newlib/sys/cdefs.h /usr/include/newlib/sys/_locale.h :
+ /usr/include/newlib/strings.h /usr/include/newlib/sys/string.h :
+ ../../extmod/vfs.h ../../py/lexer.h ../../py/mpconfig.h ../../py/qstr.h :
+ ../../py/misc.h ../../py/mpconfig.h :
+ build-raspberry_pi_pico/genhdr/qstrdefs.enum.h ../../py/reader.h :
+ ../../py/obj.h /usr/include/newlib/assert.h ../../py/mpprint.h :
+ ../../py/runtime0.h ../../supervisor/shared/translate.h ../../py/proto.h :
+ ../../extmod/vfs_fat.h ../../lib/oofatfs/ff.h ../../lib/oofatfs/ffconf.h :
+ build-raspberry_pi_pico/genhdr/flash_info.h ../../py/mphal.h mphalport.h :
+ ../../supervisor/shared/tick.h ../../extmod/virtpin.h ../../py/runtime.h :
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h ../../py/mpstate.h :
+ ../../py/mpthread.h ../../py/nlr.h :
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h :
+ ../../py/objlist.h ../../py/objexcept.h ../../py/objtuple.h :
+ ../../py/objtraceback.h ../../py/pystack.h ../../supervisor/linker.h :
+ ../../shared-bindings/microcontroller/__init__.h :
+ common-hal/microcontroller/Processor.h :
+ sdk/src/rp2_common/pico_unique_id/include/pico/unique_id.h :
+ sdk/src/common/pico_base/include/pico.h :
+ sdk/src/common/pico_base/include/pico/types.h :
+ sdk/src/common/pico_base/include/pico/assert.h sdk_config/pico/version.h :
+ sdk/src/common/pico_base/include/pico/config.h :
+ sdk_config/pico/config_autogen.h :
+ boards/raspberry_pi_pico/pico-sdk-configboard.h :
+ sdk/src/rp2_common/pico_platform/include/pico/platform.h :
+ sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h :
+ sdk/src/common/pico_base/include/pico/types.h :
+ sdk/src/common/pico_base/include/pico/error.h :
+ ../../shared-bindings/microcontroller/ResetReason.h ../../py/enum.h :
+ ../../shared-bindings/microcontroller/RunMode.h :
+ common-hal/nvm/ByteArray.h common-hal/watchdog/WatchDogTimer.h :
+ ../../shared-bindings/watchdog/WatchDogMode.h :
+ ../../shared-bindings/watchdog/WatchDogTimer.h ../../supervisor/flash.h :
+ ../../supervisor/shared/internal_flash.h ../../supervisor/usb.h :
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h :
+ sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h :
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h :
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h :
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h :
+ sdk/src/rp2_common/hardware_flash/include/hardware/flash.h :
+ sdk/src/common/pico_binary_info/include/pico/binary_info.h :
+ sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h :
+ sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h :
+ sdk/src/common/pico_binary_info/include/pico/binary_info/code.h :

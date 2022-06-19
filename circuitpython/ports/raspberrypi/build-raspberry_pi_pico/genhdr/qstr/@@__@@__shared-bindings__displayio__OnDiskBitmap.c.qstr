@@ -1,0 +1,6 @@
+Q(rb)
+Q(height)
+Q(pixel_shader)
+Q(width)
+Q(OnDiskBitmap)
+TRANSLATE("file must be a file opened in byte mode")

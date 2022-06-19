@@ -1,0 +1,3 @@
+build-raspberry_pi_pico/common-hal/busio/__init__.o: \
+ common-hal/busio/__init__.c
+ common-hal/busio/__init__.c :

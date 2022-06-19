@@ -1,0 +1,7 @@
+build-raspberry_pi_pico/lib/mp3/src/hufftabs.o: \
+ ../../lib/mp3/src/hufftabs.c ../../lib/mp3/src/coder.h \
+ ../../lib/mp3/src/mp3common.h ../../lib/mp3/src/mp3dec.h \
+ ../../lib/mp3/src/statname.h
+ ../../lib/mp3/src/hufftabs.c ../../lib/mp3/src/coder.h :
+ ../../lib/mp3/src/mp3common.h ../../lib/mp3/src/mp3dec.h :
+ ../../lib/mp3/src/statname.h :

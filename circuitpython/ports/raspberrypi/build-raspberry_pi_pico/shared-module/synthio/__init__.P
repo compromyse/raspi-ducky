@@ -1,0 +1,3 @@
+build-raspberry_pi_pico/shared-module/synthio/__init__.o: \
+ ../../shared-module/synthio/__init__.c
+ ../../shared-module/synthio/__init__.c :

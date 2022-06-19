@@ -1,0 +1,6 @@
+TRANSLATE("FFT is defined for ndarrays only")
+TRANSLATE("FFT is defined for ndarrays only")
+TRANSLATE("FFT is implemented for linear arrays only")
+TRANSLATE("input array length must be power of 2")
+TRANSLATE("FFT is implemented for linear arrays only")
+TRANSLATE("real and imaginary parts must be of equal length")

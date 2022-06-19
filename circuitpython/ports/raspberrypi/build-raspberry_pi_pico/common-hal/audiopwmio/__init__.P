@@ -1,0 +1,3 @@
+build-raspberry_pi_pico/common-hal/audiopwmio/__init__.o: \
+ common-hal/audiopwmio/__init__.c
+ common-hal/audiopwmio/__init__.c :

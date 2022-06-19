@@ -1,0 +1,8 @@
+Q(decimals)
+Q(otypes)
+TRANSLATE("first argument must be an ndarray")
+TRANSLATE("operands could not be broadcast together")
+TRANSLATE("wrong input type")
+TRANSLATE("first argument must be a callable")
+TRANSLATE("wrong output type")
+TRANSLATE("wrong output type")

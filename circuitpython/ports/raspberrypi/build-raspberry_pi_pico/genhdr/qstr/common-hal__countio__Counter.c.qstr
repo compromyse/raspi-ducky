@@ -1,0 +1,4 @@
+TRANSLATE("Pin must be on PWM Channel B")
+TRANSLATE("RISE_AND_FALL not available on this chip")
+TRANSLATE("PWM slice already in use")
+TRANSLATE("PWM slice channel A already in use")

@@ -1,0 +1,4 @@
+TRANSLATE("Invalid pins")
+TRANSLATE("I2C peripheral in use")
+TRANSLATE("Unsupported baudrate")
+TRANSLATE("No pull up found on SDA or SCL; check your wiring")

@@ -1,0 +1,3 @@
+build-raspberry_pi_pico/common-hal/analogio/__init__.o: \
+ common-hal/analogio/__init__.c
+ common-hal/analogio/__init__.c :

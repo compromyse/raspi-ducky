@@ -1,0 +1,11 @@
+build-raspberry_pi_pico/supervisor/shared/cpu.o: \
+ ../../supervisor/shared/cpu.c \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+ ../../supervisor/shared/cpu.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h
+ ../../supervisor/shared/cpu.c :
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h :
+ ../../supervisor/shared/cpu.h :
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h :
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h :

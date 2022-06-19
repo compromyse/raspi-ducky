@@ -1,0 +1,3 @@
+build-raspberry_pi_pico/common-hal/rgbmatrix/__init__.o: \
+ common-hal/rgbmatrix/__init__.c
+ common-hal/rgbmatrix/__init__.c :

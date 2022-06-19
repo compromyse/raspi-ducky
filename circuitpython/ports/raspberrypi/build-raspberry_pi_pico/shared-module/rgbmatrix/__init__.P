@@ -1,0 +1,3 @@
+build-raspberry_pi_pico/shared-module/rgbmatrix/__init__.o: \
+ ../../shared-module/rgbmatrix/__init__.c
+ ../../shared-module/rgbmatrix/__init__.c :

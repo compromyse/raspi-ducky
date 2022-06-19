@@ -1,0 +1,5 @@
+TRANSLATE("axis must be None, or an integer")
+TRANSLATE("index out of range")
+TRANSLATE("axis is out of bounds")
+TRANSLATE("size is defined for ndarrays only")
+TRANSLATE("input must be square matrix")

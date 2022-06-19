@@ -1,0 +1,8 @@
+Q(const)
+TRANSLATE("constant must be an integer")
+TRANSLATE("Unable to init parser")
+TRANSLATE("unexpected indent")
+TRANSLATE("unindent doesn't match any outer indent level")
+TRANSLATE("malformed f-string")
+TRANSLATE("raw f-strings are not supported")
+TRANSLATE("invalid syntax")

@@ -1,0 +1,3 @@
+build-raspberry_pi_pico/common-hal/rtc/__init__.o: \
+ common-hal/rtc/__init__.c
+ common-hal/rtc/__init__.c :

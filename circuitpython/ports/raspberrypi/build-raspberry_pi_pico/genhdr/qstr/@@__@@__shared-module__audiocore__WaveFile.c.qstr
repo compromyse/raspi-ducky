@@ -1,0 +1,7 @@
+TRANSLATE("Invalid wave file")
+TRANSLATE("Invalid format chunk size")
+TRANSLATE("Unsupported format")
+TRANSLATE("Data chunk must follow fmt chunk")
+TRANSLATE("Invalid file")
+TRANSLATE("Couldn't allocate first buffer")
+TRANSLATE("Couldn't allocate second buffer")

@@ -1,0 +1,3 @@
+TRANSLATE("Buffer too large and unable to allocate")
+TRANSLATE("Writes not supported on Characteristic")
+TRANSLATE("Total data to write is larger than outgoing_packet_length")

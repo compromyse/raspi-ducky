@@ -1,0 +1,4 @@
+TRANSLATE("Bit clock and word select must be sequential pins")
+TRANSLATE("Too many channels in sample.")
+TRANSLATE("No DMA channel found")
+TRANSLATE("Unable to allocate buffers for signed conversion")

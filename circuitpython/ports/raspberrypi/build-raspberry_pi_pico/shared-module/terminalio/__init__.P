@@ -1,0 +1,5 @@
+build-raspberry_pi_pico/shared-module/terminalio/__init__.o: \
+ ../../shared-module/terminalio/__init__.c \
+ ../../shared-bindings/terminalio/__init__.h
+ ../../shared-module/terminalio/__init__.c :
+ ../../shared-bindings/terminalio/__init__.h :

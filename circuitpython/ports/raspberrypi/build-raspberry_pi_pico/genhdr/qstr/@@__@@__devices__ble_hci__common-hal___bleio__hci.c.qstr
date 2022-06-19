@@ -1,0 +1,8 @@
+TRANSLATE("Timeout waiting for HCI response")
+TRANSLATE("Timeout waiting to write HCI request")
+TRANSLATE("Error reading from HCI adapter")
+TRANSLATE("Error writing to HCI adapter")
+TRANSLATE("HCI packet size mismatch")
+TRANSLATE("Error in ATT protocol code")
+TRANSLATE("HCI status error: %02x")
+TRANSLATE("Unknown hci_result_t: %d")

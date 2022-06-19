@@ -1,0 +1,3 @@
+build-raspberry_pi_pico/shared-module/audiomp3/__init__.o: \
+ ../../shared-module/audiomp3/__init__.c
+ ../../shared-module/audiomp3/__init__.c :

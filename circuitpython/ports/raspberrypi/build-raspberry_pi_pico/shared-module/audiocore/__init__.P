@@ -1,0 +1,63 @@
+build-raspberry_pi_pico/shared-module/audiocore/__init__.o: \
+ ../../shared-module/audiocore/__init__.c \
+ ../../shared-module/audioio/__init__.h \
+ ../../shared-module/audiocore/__init__.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h ../../py/obj.h \
+ /usr/include/newlib/assert.h /usr/include/newlib/_ansi.h \
+ /usr/include/newlib/newlib.h /usr/include/newlib/_newlib_version.h \
+ /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h \
+ /usr/include/newlib/sys/features.h ../../py/mpconfig.h mpconfigport.h \
+ sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+ ../../py/circuitpy_mpconfig.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdatomic.h \
+ boards/raspberry_pi_pico/mpconfigboard.h /usr/include/newlib/alloca.h \
+ /usr/include/newlib/sys/reent.h /usr/include/newlib/_ansi.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+ /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h \
+ /usr/include/newlib/machine/_default_types.h \
+ /usr/include/newlib/sys/lock.h ../../supervisor/flash_root_pointers.h \
+ supervisor/internal_flash_root_pointers.h ../../py/misc.h \
+ ../../py/mpconfig.h ../../py/qstr.h \
+ build-raspberry_pi_pico/genhdr/qstrdefs.enum.h ../../py/mpprint.h \
+ ../../py/runtime0.h ../../supervisor/shared/translate.h ../../py/proto.h \
+ ../../shared-bindings/audiocore/RawSample.h \
+ ../../shared-module/audiocore/RawSample.h \
+ ../../shared-bindings/audiocore/WaveFile.h ../../extmod/vfs_fat.h \
+ ../../lib/oofatfs/ff.h ../../lib/oofatfs/ffconf.h ../../extmod/vfs.h \
+ ../../py/lexer.h ../../py/reader.h \
+ ../../shared-module/audiocore/WaveFile.h \
+ ../../shared-bindings/audiomixer/Mixer.h \
+ common-hal/microcontroller/Pin.h peripherals/pins.h \
+ ../../shared-module/audiomixer/Mixer.h ../../py/objtuple.h
+ ../../shared-module/audiocore/__init__.c :
+ ../../shared-module/audioio/__init__.h :
+ ../../shared-module/audiocore/__init__.h :
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h :
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h ../../py/obj.h :
+ /usr/include/newlib/assert.h /usr/include/newlib/_ansi.h :
+ /usr/include/newlib/newlib.h /usr/include/newlib/_newlib_version.h :
+ /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h :
+ /usr/include/newlib/sys/features.h ../../py/mpconfig.h mpconfigport.h :
+ sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h :
+ ../../py/circuitpy_mpconfig.h :
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdatomic.h :
+ boards/raspberry_pi_pico/mpconfigboard.h /usr/include/newlib/alloca.h :
+ /usr/include/newlib/sys/reent.h /usr/include/newlib/_ansi.h :
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h :
+ /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h :
+ /usr/include/newlib/machine/_default_types.h :
+ /usr/include/newlib/sys/lock.h ../../supervisor/flash_root_pointers.h :
+ supervisor/internal_flash_root_pointers.h ../../py/misc.h :
+ ../../py/mpconfig.h ../../py/qstr.h :
+ build-raspberry_pi_pico/genhdr/qstrdefs.enum.h ../../py/mpprint.h :
+ ../../py/runtime0.h ../../supervisor/shared/translate.h ../../py/proto.h :
+ ../../shared-bindings/audiocore/RawSample.h :
+ ../../shared-module/audiocore/RawSample.h :
+ ../../shared-bindings/audiocore/WaveFile.h ../../extmod/vfs_fat.h :
+ ../../lib/oofatfs/ff.h ../../lib/oofatfs/ffconf.h ../../extmod/vfs.h :
+ ../../py/lexer.h ../../py/reader.h :
+ ../../shared-module/audiocore/WaveFile.h :
+ ../../shared-bindings/audiomixer/Mixer.h :
+ common-hal/microcontroller/Pin.h peripherals/pins.h :
+ ../../shared-module/audiomixer/Mixer.h ../../py/objtuple.h :

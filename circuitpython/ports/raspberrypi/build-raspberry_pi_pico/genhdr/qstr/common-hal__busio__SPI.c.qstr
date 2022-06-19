@@ -1,0 +1,3 @@
+TRANSLATE("Half duplex SPI is not implemented")
+TRANSLATE("Invalid pins")
+TRANSLATE("SPI peripheral in use")

@@ -1,0 +1,3 @@
+build-raspberry_pi_pico/shared-module/qrio/__init__.o: \
+ ../../shared-module/qrio/__init__.c
+ ../../shared-module/qrio/__init__.c :

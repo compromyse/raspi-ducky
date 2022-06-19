@@ -1,0 +1,6 @@
+Q(report_id)
+TRANSLATE("Invalid %q")
+TRANSLATE("More than %d report ids not supported")
+TRANSLATE("Buffer incorrect size. Should be %d bytes.")
+TRANSLATE("USB busy")
+TRANSLATE("USB error")

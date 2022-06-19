@@ -1,0 +1,3 @@
+build-raspberry_pi_pico/common-hal/watchdog/WatchDogMode.o: \
+ common-hal/watchdog/WatchDogMode.c
+ common-hal/watchdog/WatchDogMode.c :

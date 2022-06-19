@@ -1,0 +1,8 @@
+Q(x)
+Q(y)
+Q(x)
+Q(y)
+Q(point)
+TRANSLATE("%q must be between %d and %d")
+TRANSLATE("(x,y) integers required")
+TRANSLATE("unsupported %q type")

@@ -1,0 +1,3 @@
+build-raspberry_pi_pico/shared-module/onewireio/__init__.o: \
+ ../../shared-module/onewireio/__init__.c
+ ../../shared-module/onewireio/__init__.c :

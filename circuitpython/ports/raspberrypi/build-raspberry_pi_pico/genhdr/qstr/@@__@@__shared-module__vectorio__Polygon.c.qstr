@@ -1,0 +1,6 @@
+Q(point)
+Q(point)
+TRANSLATE("Polygon needs at least 3 points")
+TRANSLATE("%q must be a tuple of length 2")
+TRANSLATE("unsupported %q type")
+TRANSLATE("polygon can only be registered in one parent")

@@ -1,0 +1,4 @@
+TRANSLATE("can't set attribute")
+TRANSLATE("function takes %d positional arguments but %d were given")
+TRANSLATE("unexpected keyword argument '%q'")
+TRANSLATE("function got multiple values for argument '%q'")

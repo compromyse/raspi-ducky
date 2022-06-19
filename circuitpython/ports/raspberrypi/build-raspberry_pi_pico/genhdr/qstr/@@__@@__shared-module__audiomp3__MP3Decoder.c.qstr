@@ -1,0 +1,5 @@
+TRANSLATE("Couldn't allocate input buffer")
+TRANSLATE("Couldn't allocate decoder")
+TRANSLATE("Couldn't allocate first buffer")
+TRANSLATE("Couldn't allocate second buffer")
+TRANSLATE("Failed to parse MP3 file")

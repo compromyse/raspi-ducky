@@ -1,0 +1,218 @@
+build-raspberry_pi_pico/supervisor/port.o: supervisor/port.c \
+ /usr/include/newlib/string.h /usr/include/newlib/_ansi.h \
+ /usr/include/newlib/newlib.h /usr/include/newlib/_newlib_version.h \
+ /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h \
+ /usr/include/newlib/sys/features.h /usr/include/newlib/sys/reent.h \
+ /usr/include/newlib/_ansi.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+ /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h \
+ /usr/include/newlib/machine/_default_types.h \
+ /usr/include/newlib/sys/lock.h /usr/include/newlib/sys/cdefs.h \
+ /usr/include/newlib/sys/_locale.h /usr/include/newlib/strings.h \
+ /usr/include/newlib/sys/string.h /usr/include/newlib/stdlib.h \
+ /usr/include/newlib/machine/stdlib.h /usr/include/newlib/alloca.h \
+ ../../supervisor/background_callback.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+ ../../supervisor/board.h ../../supervisor/shared/safe_mode.h \
+ ../../py/mpconfig.h mpconfigport.h \
+ sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+ ../../py/circuitpy_mpconfig.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdatomic.h \
+ boards/raspberry_pi_pico/mpconfigboard.h \
+ ../../supervisor/flash_root_pointers.h \
+ supervisor/internal_flash_root_pointers.h ../../supervisor/port.h \
+ ../../supervisor/memory.h bindings/rp2pio/StateMachine.h ../../py/obj.h \
+ /usr/include/newlib/assert.h ../../py/misc.h ../../py/mpconfig.h \
+ ../../py/qstr.h build-raspberry_pi_pico/genhdr/qstrdefs.enum.h \
+ ../../py/mpprint.h ../../py/runtime0.h \
+ ../../supervisor/shared/translate.h \
+ ../../shared-bindings/digitalio/Pull.h common-hal/microcontroller/Pin.h \
+ peripherals/pins.h common-hal/rp2pio/StateMachine.h \
+ sdk/src/rp2_common/hardware_pio/include/hardware/pio.h \
+ sdk/src/common/pico_base/include/pico.h \
+ sdk/src/common/pico_base/include/pico/types.h \
+ sdk/src/common/pico_base/include/pico/assert.h sdk_config/pico/version.h \
+ sdk/src/common/pico_base/include/pico/config.h \
+ sdk_config/pico/config_autogen.h \
+ boards/raspberry_pi_pico/pico-sdk-configboard.h \
+ sdk/src/rp2_common/pico_platform/include/pico/platform.h \
+ sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h \
+ sdk/src/common/pico_base/include/pico/types.h \
+ sdk/src/common/pico_base/include/pico/error.h \
+ sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h \
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h \
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h \
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h \
+ sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h \
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h \
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h \
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h \
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h \
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
+ sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
+ build-raspberry_pi_pico/genhdr/mpversion.h \
+ ../../shared-bindings/audiopwmio/PWMAudioOut.h \
+ common-hal/audiopwmio/PWMAudioOut.h common-hal/pwmio/PWMOut.h \
+ audio_dma.h sdk/src/rp2_common/hardware_dma/include/hardware/dma.h \
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/dma.h \
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/dma.h \
+ ../../shared-bindings/audiocore/RawSample.h \
+ ../../shared-module/audiocore/RawSample.h \
+ ../../shared-module/audiocore/__init__.h ../../py/proto.h \
+ ../../shared-bindings/busio/I2C.h common-hal/busio/I2C.h \
+ ../../shared-module/bitbangio/I2C.h common-hal/digitalio/DigitalInOut.h \
+ sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
+ sdk/src/common/pico_time/include/pico/time.h \
+ sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h \
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h \
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
+ ../../shared-bindings/busio/SPI.h common-hal/busio/SPI.h \
+ sdk/src/rp2_common/hardware_spi/include/hardware/spi.h \
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h \
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h \
+ ../../shared-bindings/countio/Counter.h common-hal/countio/Counter.h \
+ ../../shared-bindings/countio/Edge.h ../../py/enum.h \
+ ../../shared-bindings/microcontroller/__init__.h ../../py/objtuple.h \
+ common-hal/microcontroller/Processor.h \
+ sdk/src/rp2_common/pico_unique_id/include/pico/unique_id.h \
+ ../../shared-bindings/microcontroller/ResetReason.h \
+ ../../shared-bindings/microcontroller/RunMode.h \
+ common-hal/nvm/ByteArray.h common-hal/watchdog/WatchDogTimer.h \
+ ../../shared-bindings/watchdog/WatchDogMode.h \
+ ../../shared-bindings/watchdog/WatchDogTimer.h \
+ ../../shared-bindings/rtc/__init__.h \
+ ../../shared-bindings/pwmio/PWMOut.h common-hal/rtc/RTC.h \
+ common-hal/busio/UART.h ../../py/ringbuf.h ../../py/gc.h \
+ ../../py/mpstate.h ../../py/mpthread.h ../../py/nlr.h \
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h \
+ ../../py/objlist.h ../../py/objexcept.h ../../py/objtraceback.h \
+ sdk/src/rp2_common/hardware_uart/include/hardware/uart.h \
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
+ ../../supervisor/shared/stack.h ../../supervisor/shared/tick.h \
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/watchdog.h \
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/watchdog.h \
+ sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h \
+ sdk/src/rp2_common/hardware_sync/include/hardware/sync.h \
+ sdk/src/rp2_common/hardware_timer/include/hardware/timer.h \
+ sdk/src/common/pico_time/include/pico/time.h \
+ sdk/src/common/pico_binary_info/include/pico/binary_info.h \
+ sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h \
+ sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h \
+ sdk/src/common/pico_binary_info/include/pico/binary_info/code.h \
+ sdk/src/rp2_common/pico_bootrom/include/pico/bootrom.h \
+ sdk/src/rp2_common/hardware_watchdog/include/hardware/watchdog.h \
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/watchdog.h
+supervisor/port.c :
+ /usr/include/newlib/string.h /usr/include/newlib/_ansi.h :
+ /usr/include/newlib/newlib.h /usr/include/newlib/_newlib_version.h :
+ /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h :
+ /usr/include/newlib/sys/features.h /usr/include/newlib/sys/reent.h :
+ /usr/include/newlib/_ansi.h :
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h :
+ /usr/include/newlib/sys/_types.h /usr/include/newlib/machine/_types.h :
+ /usr/include/newlib/machine/_default_types.h :
+ /usr/include/newlib/sys/lock.h /usr/include/newlib/sys/cdefs.h :
+ /usr/include/newlib/sys/_locale.h /usr/include/newlib/strings.h :
+ /usr/include/newlib/sys/string.h /usr/include/newlib/stdlib.h :
+ /usr/include/newlib/machine/stdlib.h /usr/include/newlib/alloca.h :
+ ../../supervisor/background_callback.h :
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h :
+ ../../supervisor/board.h ../../supervisor/shared/safe_mode.h :
+ ../../py/mpconfig.h mpconfigport.h :
+ sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h :
+ ../../py/circuitpy_mpconfig.h :
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h :
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdatomic.h :
+ boards/raspberry_pi_pico/mpconfigboard.h :
+ ../../supervisor/flash_root_pointers.h :
+ supervisor/internal_flash_root_pointers.h ../../supervisor/port.h :
+ ../../supervisor/memory.h bindings/rp2pio/StateMachine.h ../../py/obj.h :
+ /usr/include/newlib/assert.h ../../py/misc.h ../../py/mpconfig.h :
+ ../../py/qstr.h build-raspberry_pi_pico/genhdr/qstrdefs.enum.h :
+ ../../py/mpprint.h ../../py/runtime0.h :
+ ../../supervisor/shared/translate.h :
+ ../../shared-bindings/digitalio/Pull.h common-hal/microcontroller/Pin.h :
+ peripherals/pins.h common-hal/rp2pio/StateMachine.h :
+ sdk/src/rp2_common/hardware_pio/include/hardware/pio.h :
+ sdk/src/common/pico_base/include/pico.h :
+ sdk/src/common/pico_base/include/pico/types.h :
+ sdk/src/common/pico_base/include/pico/assert.h sdk_config/pico/version.h :
+ sdk/src/common/pico_base/include/pico/config.h :
+ sdk_config/pico/config_autogen.h :
+ boards/raspberry_pi_pico/pico-sdk-configboard.h :
+ sdk/src/rp2_common/pico_platform/include/pico/platform.h :
+ sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h :
+ sdk/src/common/pico_base/include/pico/types.h :
+ sdk/src/common/pico_base/include/pico/error.h :
+ sdk/src/rp2_common/hardware_base/include/hardware/address_mapped.h :
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h :
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h :
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h :
+ sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h :
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/sio.h :
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h :
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h :
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/padsbank0.h :
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/pads_bank0.h :
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h :
+ sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h :
+ build-raspberry_pi_pico/genhdr/mpversion.h :
+ ../../shared-bindings/audiopwmio/PWMAudioOut.h :
+ common-hal/audiopwmio/PWMAudioOut.h common-hal/pwmio/PWMOut.h :
+ audio_dma.h sdk/src/rp2_common/hardware_dma/include/hardware/dma.h :
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/dma.h :
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/dma.h :
+ ../../shared-bindings/audiocore/RawSample.h :
+ ../../shared-module/audiocore/RawSample.h :
+ ../../shared-module/audiocore/__init__.h ../../py/proto.h :
+ ../../shared-bindings/busio/I2C.h common-hal/busio/I2C.h :
+ ../../shared-module/bitbangio/I2C.h common-hal/digitalio/DigitalInOut.h :
+ sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h :
+ sdk/src/common/pico_time/include/pico/time.h :
+ sdk/src/rp2_common/hardware_timer/include/hardware/timer.h :
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/timer.h :
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/timer.h :
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h :
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h :
+ ../../shared-bindings/busio/SPI.h common-hal/busio/SPI.h :
+ sdk/src/rp2_common/hardware_spi/include/hardware/spi.h :
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h :
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h :
+ ../../shared-bindings/countio/Counter.h common-hal/countio/Counter.h :
+ ../../shared-bindings/countio/Edge.h ../../py/enum.h :
+ ../../shared-bindings/microcontroller/__init__.h ../../py/objtuple.h :
+ common-hal/microcontroller/Processor.h :
+ sdk/src/rp2_common/pico_unique_id/include/pico/unique_id.h :
+ ../../shared-bindings/microcontroller/ResetReason.h :
+ ../../shared-bindings/microcontroller/RunMode.h :
+ common-hal/nvm/ByteArray.h common-hal/watchdog/WatchDogTimer.h :
+ ../../shared-bindings/watchdog/WatchDogMode.h :
+ ../../shared-bindings/watchdog/WatchDogTimer.h :
+ ../../shared-bindings/rtc/__init__.h :
+ ../../shared-bindings/pwmio/PWMOut.h common-hal/rtc/RTC.h :
+ common-hal/busio/UART.h ../../py/ringbuf.h ../../py/gc.h :
+ ../../py/mpstate.h ../../py/mpthread.h ../../py/nlr.h :
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include-fixed/limits.h :
+ ../../py/objlist.h ../../py/objexcept.h ../../py/objtraceback.h :
+ sdk/src/rp2_common/hardware_uart/include/hardware/uart.h :
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h :
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h :
+ ../../supervisor/shared/stack.h ../../supervisor/shared/tick.h :
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/watchdog.h :
+ sdk/src/rp2040/hardware_regs/include/hardware/regs/watchdog.h :
+ sdk/src/rp2_common/hardware_gpio/include/hardware/gpio.h :
+ sdk/src/rp2_common/hardware_sync/include/hardware/sync.h :
+ sdk/src/rp2_common/hardware_timer/include/hardware/timer.h :
+ sdk/src/common/pico_time/include/pico/time.h :
+ sdk/src/common/pico_binary_info/include/pico/binary_info.h :
+ sdk/src/common/pico_binary_info/include/pico/binary_info/defs.h :
+ sdk/src/common/pico_binary_info/include/pico/binary_info/structure.h :
+ sdk/src/common/pico_binary_info/include/pico/binary_info/code.h :
+ sdk/src/rp2_common/pico_bootrom/include/pico/bootrom.h :
+ sdk/src/rp2_common/hardware_watchdog/include/hardware/watchdog.h :
+ sdk/src/rp2040/hardware_structs/include/hardware/structs/watchdog.h :

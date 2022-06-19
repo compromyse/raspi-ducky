@@ -1,0 +1,4 @@
+TRANSLATE("Invalid BMP file")
+TRANSLATE("Unable to read color palette data")
+TRANSLATE("Only Windows format, uncompressed BMP supported: given header size is %d")
+TRANSLATE("Only monochrome, indexed 4bpp or 8bpp, and 16bpp or greater BMPs supported: %d bpp given")

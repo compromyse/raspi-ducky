@@ -1,0 +1,3 @@
+TRANSLATE("WatchDogTimer cannot be deinitialized once mode is set to RESET")
+TRANSLATE("timeout duration exceeded the maximum supported value")
+TRANSLATE("RAISE mode is not implemented")

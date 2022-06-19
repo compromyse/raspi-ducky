@@ -1,0 +1,7 @@
+Q(__name__)
+Q(io)
+Q(open)
+Q(FileIO)
+Q(TextIOWrapper)
+Q(StringIO)
+Q(BytesIO)

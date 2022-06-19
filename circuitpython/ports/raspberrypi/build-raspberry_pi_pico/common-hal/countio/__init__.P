@@ -1,0 +1,3 @@
+build-raspberry_pi_pico/common-hal/countio/__init__.o: \
+ common-hal/countio/__init__.c
+ common-hal/countio/__init__.c :

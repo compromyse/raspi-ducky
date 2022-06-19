@@ -1,0 +1,7 @@
+TRANSLATE("input data must be an iterable")
+TRANSLATE("more degrees of freedom than data points")
+TRANSLATE("input data must be an iterable")
+TRANSLATE("input vectors must be of equal length")
+TRANSLATE("more degrees of freedom than data points")
+TRANSLATE("could not invert Vandermonde matrix")
+TRANSLATE("inputs are not iterable")

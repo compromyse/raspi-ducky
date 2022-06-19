@@ -1,0 +1,4 @@
+Q(int)
+Q(_transmit)
+TRANSLATE("can't convert %q to %q")
+TRANSLATE("Expected tuple of length %d, got %d")
