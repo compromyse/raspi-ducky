@@ -1,3 +1,5 @@
 {
-    "makefile.extensionOutputFolder": "./.vscode"
+    "makefile.extensionOutputFolder": "./.vscode",
+    "cmake.configureOnOpen": false,
+    "rpc.enabled": true
 }
