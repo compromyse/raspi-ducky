@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jun 21 16:37:07 2022
+# Make data base, printed on Thu Jun 23 20:46:38 2022
 
 # Variables
 
@@ -15,7 +15,7 @@ GDK_BACKEND = x11
 # environment
 LC_ALL = C
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-4d3f2e6e-38bd-449b-8845-cfd127c0e46e.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-cdd61109-1886-4709-ad94-345c4c01a97a.sock
 # environment
 MANDATORY_PATH = /usr/share/gconf/xubuntu.mandatory.path
 # environment
@@ -89,7 +89,7 @@ MAKEFILE_LIST :=
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 481696
+VSCODE_PID = 588088
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -213,9 +213,9 @@ GDMSESSION = xubuntu
 
 # Directories
 
-# . (device 2049, inode 6816481): 10 files, no impossibilities.
+# . (device 2049, inode 6816481): 13 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 13 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -265,13 +265,13 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 18 / storage = 175 B / avg = 9 B
-# current buf: size = 8162 B / used = 175 B / count = 18 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 21 / storage = 212 B / avg = 10 B
+# current buf: size = 8162 B / used = 212 B / count = 21 / avg = 10 B
 
-# strcache performance: lookups = 21 / hit rate = 14%
+# strcache performance: lookups = 24 / hit rate = 12%
 # hash-table stats:
-# Load=18/8192=0%, Rehash=0, Collisions=0/21=0%
-# Finished Make data base on Tue Jun 21 16:37:07 2022
+# Load=21/8192=0%, Rehash=0, Collisions=0/24=0%
+# Finished Make data base on Thu Jun 23 20:46:38 2022
 
  
 make: *** No rule to make target 'all'.  Stop.
