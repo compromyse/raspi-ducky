@@ -1,6 +1,0 @@
-Q(PulseIn)
-Q(PulseIn)
-TRANSLATE("Failed to allocate RX buffer of %d bytes")
-TRANSLATE("All state machines in use")
-TRANSLATE("pop from empty %q")
-TRANSLATE("%q index out of range")

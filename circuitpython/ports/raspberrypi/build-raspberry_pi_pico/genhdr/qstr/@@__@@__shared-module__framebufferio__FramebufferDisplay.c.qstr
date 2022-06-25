@@ -1,3 +1,0 @@
-Q(protocol_framebuffer)
-TRANSLATE("Framebuffer requires %d bytes")
-TRANSLATE("Below minimum frame rate")

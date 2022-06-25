@@ -1,3 +1,0 @@
-build-raspberry_pi_pico/shared-module/sharpdisplay/__init__.o: \
- ../../shared-module/sharpdisplay/__init__.c
- ../../shared-module/sharpdisplay/__init__.c :

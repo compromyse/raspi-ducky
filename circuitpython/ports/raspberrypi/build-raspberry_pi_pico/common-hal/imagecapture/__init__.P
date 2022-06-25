@@ -1,3 +1,0 @@
-build-raspberry_pi_pico/common-hal/imagecapture/__init__.o: \
- common-hal/imagecapture/__init__.c
- common-hal/imagecapture/__init__.c :

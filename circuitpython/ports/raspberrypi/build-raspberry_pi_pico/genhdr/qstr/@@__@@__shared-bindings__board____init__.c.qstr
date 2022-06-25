@@ -1,6 +1,0 @@
-Q(I2C)
-Q(SPI)
-Q(UART)
-TRANSLATE("No default %q bus")
-TRANSLATE("No default %q bus")
-TRANSLATE("No default %q bus")

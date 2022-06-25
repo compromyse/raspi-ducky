@@ -1,7 +1,0 @@
-Q(frequency)
-Q(reset_reason)
-Q(temperature)
-Q(uid)
-Q(voltage)
-Q(Processor)
-TRANSLATE("frequency is read-only for this board")

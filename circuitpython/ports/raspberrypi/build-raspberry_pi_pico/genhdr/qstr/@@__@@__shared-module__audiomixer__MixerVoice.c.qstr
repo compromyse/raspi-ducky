@@ -1,4 +1,0 @@
-TRANSLATE("The sample's sample rate does not match the mixer's")
-TRANSLATE("The sample's channel count does not match the mixer's")
-TRANSLATE("The sample's bits_per_sample does not match the mixer's")
-TRANSLATE("The sample's signedness does not match the mixer's")

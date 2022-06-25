@@ -1,3 +1,0 @@
-build-raspberry_pi_pico/shared-module/gifio/__init__.o: \
- ../../shared-module/gifio/__init__.c
- ../../shared-module/gifio/__init__.c :

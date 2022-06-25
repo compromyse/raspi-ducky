@@ -1,6 +1,0 @@
-TRANSLATE("divide by zero")
-TRANSLATE("negative shift count")
-TRANSLATE("pow() with 3 arguments requires integers")
-TRANSLATE("pow() 3rd argument cannot be 0")
-TRANSLATE("overflow converting long int to machine word")
-TRANSLATE("overflow converting long int to machine word")

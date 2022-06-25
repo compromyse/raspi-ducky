@@ -1,5 +1,0 @@
-Q(__exit__)
-Q(__enter__)
-TRANSLATE("local variable referenced before assignment")
-TRANSLATE("no active exception to reraise")
-TRANSLATE("opcode")

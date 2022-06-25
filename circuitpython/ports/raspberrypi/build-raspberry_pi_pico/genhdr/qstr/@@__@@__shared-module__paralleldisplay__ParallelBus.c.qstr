@@ -1,1 +1,0 @@
-TRANSLATE("This microcontroller only supports data0=, not data_pins=, because it requires contiguous pins.")

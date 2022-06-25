@@ -1,4 +1,0 @@
-Q(axis)
-TRANSLATE("wrong length of condition array")
-TRANSLATE("arguments must be ndarrays")
-TRANSLATE("dimensions do not match")

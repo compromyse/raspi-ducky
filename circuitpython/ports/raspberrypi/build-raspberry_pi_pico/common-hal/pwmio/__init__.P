@@ -1,3 +1,0 @@
-build-raspberry_pi_pico/common-hal/pwmio/__init__.o: \
- common-hal/pwmio/__init__.c
- common-hal/pwmio/__init__.c :

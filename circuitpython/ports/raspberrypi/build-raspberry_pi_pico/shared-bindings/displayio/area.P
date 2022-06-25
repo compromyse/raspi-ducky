@@ -1,3 +1,0 @@
-build-raspberry_pi_pico/shared-bindings/displayio/area.o: \
- ../../shared-bindings/displayio/area.c
- ../../shared-bindings/displayio/area.c :

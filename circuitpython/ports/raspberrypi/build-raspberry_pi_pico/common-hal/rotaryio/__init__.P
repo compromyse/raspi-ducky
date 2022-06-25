@@ -1,3 +1,0 @@
-build-raspberry_pi_pico/common-hal/rotaryio/__init__.o: \
- common-hal/rotaryio/__init__.c
- common-hal/rotaryio/__init__.c :

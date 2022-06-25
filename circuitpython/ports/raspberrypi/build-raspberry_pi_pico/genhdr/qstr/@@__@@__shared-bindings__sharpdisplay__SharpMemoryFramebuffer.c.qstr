@@ -1,7 +1,0 @@
-Q(spi_bus)
-Q(chip_select)
-Q(width)
-Q(height)
-Q(baudrate)
-Q(deinit)
-Q(SharpMemoryFramebuffer)

@@ -1,7 +1,0 @@
-TRANSLATE("max_length must be <= 512")
-TRANSLATE("Value length != required fixed length")
-TRANSLATE("Value length > max_length")
-TRANSLATE("Characteristic not writable")
-TRANSLATE("Descriptor can only be added to most recently added characteristic")
-TRANSLATE("No CCCD for this Characteristic")
-TRANSLATE("Can't set CCCD on local Characteristic")

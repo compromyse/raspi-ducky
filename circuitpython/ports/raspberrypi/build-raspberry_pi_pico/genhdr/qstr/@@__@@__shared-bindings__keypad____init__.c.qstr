@@ -1,7 +1,0 @@
-Q(__name__)
-Q(keypad)
-Q(Event)
-Q(EventQueue)
-Q(KeyMatrix)
-Q(Keys)
-Q(ShiftRegisterKeys)

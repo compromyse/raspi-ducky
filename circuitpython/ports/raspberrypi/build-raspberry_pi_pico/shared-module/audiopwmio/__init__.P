@@ -1,3 +1,0 @@
-build-raspberry_pi_pico/shared-module/audiopwmio/__init__.o: \
- ../../shared-module/audiopwmio/__init__.c
- ../../shared-module/audiopwmio/__init__.c :

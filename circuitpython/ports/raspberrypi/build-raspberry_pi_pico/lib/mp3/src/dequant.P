@@ -1,9 +1,0 @@
-build-raspberry_pi_pico/lib/mp3/src/dequant.o: \
- ../../lib/mp3/src/dequant.c ../../lib/mp3/src/coder.h \
- ../../lib/mp3/src/mp3common.h ../../lib/mp3/src/mp3dec.h \
- ../../lib/mp3/src/statname.h ../../lib/mp3/src/assembly.h \
- /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h
- ../../lib/mp3/src/dequant.c ../../lib/mp3/src/coder.h :
- ../../lib/mp3/src/mp3common.h ../../lib/mp3/src/mp3dec.h :
- ../../lib/mp3/src/statname.h ../../lib/mp3/src/assembly.h :
- /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h :

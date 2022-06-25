@@ -1,7 +1,10 @@
 #!/bin/bash
 a=$PWD
+a=$PWD
 
-cp /mounted/code.py $a/frozen/compromyse/picoducky.py
+ls /mounted
+
+cp /mounted/code.py $a/frozen/compromyse/raspiducky.py
 
 cd $a/ports/raspberrypi/
 make BOARD=raspberry_pi_pico -j4

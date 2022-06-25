@@ -1,5 +1,0 @@
-Q(modules)
-TRANSLATE("Plus any modules on the filesystem\n")
-TRANSLATE("object ")
-TRANSLATE(" is of type %q\n")
-TRANSLATE("Welcome to Adafruit CircuitPython %s!\n\nVisit circuitpython.org for more information.\n\nTo list built-in modules type `help(\"modules\")`.\n")

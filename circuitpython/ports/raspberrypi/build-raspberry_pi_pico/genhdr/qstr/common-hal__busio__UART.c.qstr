@@ -1,7 +1,0 @@
-TRANSLATE("Invalid pins")
-TRANSLATE("Invalid word/bit length")
-TRANSLATE("Invalid buffer size")
-TRANSLATE("All UART peripherals are in use")
-TRANSLATE("Failed to allocate RX buffer")
-TRANSLATE("No TX pin")
-TRANSLATE("No RX pin")

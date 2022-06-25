@@ -1,6 +1,0 @@
-TRANSLATE("Clock pin init failed.")
-TRANSLATE("MOSI pin init failed.")
-TRANSLATE("MISO pin init failed.")
-TRANSLATE("Cannot write without MOSI pin.")
-TRANSLATE("Cannot read without MISO pin.")
-TRANSLATE("Cannot transfer without MOSI and MISO pins.")

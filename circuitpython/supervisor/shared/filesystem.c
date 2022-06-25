@@ -71,17 +71,20 @@ static void make_empty_file(FATFS *fatfs, const char *path) {
 
 
 static void make_sample_code_file(FATFS *fatfs) {
-    #if CIRCUITPY_FULL_BUILD
     FIL fs;
     UINT char_written = 0;
-    const byte buffer[] = "import picoducky\nmain()\n";
+    UINT boot_char_written = 0;
+    const byte buffer[] = "import raspiducky\nraspiducky.main()\n";
+    const byte bootbuffer[] = "import storage\nstorage.disable_usb_drive()\n";
+    
     // Create or modify existing code.py file
     f_open(fatfs, &fs, "/code.py", FA_WRITE | FA_CREATE_ALWAYS);
     f_write(&fs, buffer, sizeof(buffer) - 1, &char_written);
     f_close(&fs);
-    #else
-    make_empty_file(fatfs, "/code.py");
-    #endif
+
+    f_open(fatfs, &fs, "/boot.py", FA_WRITE | FA_CREATE_ALWAYS);
+    f_write(&fs, bootbuffer, sizeof(bootbuffer) - 1, &boot_char_written);
+    f_close(&fs);
 }
 
 // we don't make this function static because it needs a lot of stack and we

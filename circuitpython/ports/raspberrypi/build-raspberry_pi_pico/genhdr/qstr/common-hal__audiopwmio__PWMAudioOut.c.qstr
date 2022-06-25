@@ -1,7 +1,0 @@
-TRANSLATE("Pins must share PWM slice")
-TRANSLATE("Stereo left must be on PWM channel A")
-TRANSLATE("Stereo right must be on PWM channel B")
-TRANSLATE("All timers in use")
-TRANSLATE("No DMA pacing timer found")
-TRANSLATE("No DMA channel found")
-TRANSLATE("Unable to allocate buffers for signed conversion")

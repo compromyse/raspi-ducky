@@ -1,6 +1,0 @@
-Q(codepoint)
-Q(bitmap)
-Q(get_bounding_box)
-Q(get_glyph)
-Q(BuiltinFont)
-TRANSLATE("%q should be an int")
