@@ -5,6 +5,7 @@ from termcolor import colored
 import sys
 import urllib.request
 import zipfile
+import base64
 
 # Needed for parser
 class Keycode:A=4;B=5;C=6;D=7;E=8;F=9;G=10;H=11;I=12;J=13;K=14;L=15;M=16;N=17;O=18;P=19;Q=20;R=21;S=22;T=23;U=24;V=25;W=26;X=27;Y=28;Z=29;ONE=30;TWO=31;THREE=32;FOUR=33;FIVE=34;SIX=35;SEVEN=36;EIGHT=37;NINE=38;ZERO=39;ENTER=40;RETURN=ENTER;ESCAPE=41;BACKSPACE=42;TAB=43;SPACEBAR=44;SPACE=SPACEBAR;MINUS=45;EQUALS=46;LEFT_BRACKET=47;RIGHT_BRACKET=48;BACKSLASH=49;POUND=50;SEMICOLON=51;QUOTE=52;GRAVE_ACCENT=53;COMMA=54;PERIOD=55;FORWARD_SLASH=56;CAPS_LOCK=57;F1=58;F2=59;F3=60;F4=61;F5=62;F6=63;F7=64;F8=65;F9=66;F10=67;F11=68;F12=69;PRINT_SCREEN=70;SCROLL_LOCK=71;PAUSE=72;INSERT=73;HOME=74;PAGE_UP=75;DELETE=76;END=77;PAGE_DOWN=78;RIGHT_ARROW=79;LEFT_ARROW=80;DOWN_ARROW=81;UP_ARROW=82;KEYPAD_NUMLOCK=83;KEYPAD_FORWARD_SLASH=84;KEYPAD_ASTERISK=85;KEYPAD_MINUS=86;KEYPAD_PLUS=87;KEYPAD_ENTER=88;KEYPAD_ONE=89;KEYPAD_TWO=90;KEYPAD_THREE=91;KEYPAD_FOUR=92;KEYPAD_FIVE=93;KEYPAD_SIX=94;KEYPAD_SEVEN=95;KEYPAD_EIGHT=96;KEYPAD_NINE=97;KEYPAD_ZERO=98;KEYPAD_PERIOD=99;KEYPAD_BACKSLASH=100;APPLICATION=101;POWER=102;KEYPAD_EQUALS=103;F13=104;F14=105;F15=106;F16=107;F17=108;F18=109;F19=110;F20=111;F21=112;F22=113;F23=114;F24=115;LEFT_CONTROL=224;CONTROL=LEFT_CONTROL;LEFT_SHIFT=225;SHIFT=LEFT_SHIFT;LEFT_ALT=226;ALT=LEFT_ALT;OPTION=ALT;LEFT_GUI=227;GUI=LEFT_GUI;WINDOWS=GUI;COMMAND=GUI;RIGHT_CONTROL=228;RIGHT_SHIFT=229;RIGHT_ALT=230;RIGHT_GUI=231
@@ -35,7 +36,8 @@ def buildimage():
     # Build the image
     print(colored('[+]> Building image, this may take a few minutes.. This will only happen on the first run.', 'green'))
     subprocess.call('docker build -t raspiducky .', shell=True)
-    print("Done!")
+    print('Done!')
+    os.chdir('../')
 
 # Check if image already exists
 def imagecheck():
@@ -54,33 +56,33 @@ def convertLine(line):
         elif hasattr(Keycode, key):
             newline.append(getattr(Keycode, key))
         else:
-            print(colored(f"Unknown key: \"{key}\"", 'red'))
+            print(colored(f'Unknown key: "{key}"', 'red'))
             sys.exit(1)
     return newline
 
 def runScriptLine(line):
     for k in line:
-        final.append(f"kbd.press({k})")
-    final.append("kbd.release_all()")
+        final.append(f'kbd.press({k})')
+    final.append('kbd.release_all()')
 
 def parseLine(line):
     global defaultDelay
-    if(line[0:3] == "REM"):
+    if(line[0:3] == 'REM'):
         # ignore ducky script comments
         pass
-    elif(line[0:5] == "DELAY"):
+    elif(line[0:5] == 'DELAY'):
         final.append(f'time.sleep({int(line[6:])})')
-    elif(line[0:6] == "STRING"):
+    elif(line[0:6] == 'STRING'):
         final.append(f'layout.write(\'{line[7:]}\')')
     else:
         newScriptLine = convertLine(line)
         runScriptLine(newScriptLine)
 
 # Final docker section
-def dockersection():
+def dockersection(base64_file):
     # Build image, skip build if image is already built
     if imagecheck():
-        print(colored("[+]> Looks like the Docker image is already built, I will skip that step.", 'green'))
+        print(colored('[+]> Looks like the Docker image is already built, I will skip that step.', 'green'))
     else:
         if os.path.isdir('circuitpython'):
             print(colored('[+]> Circuitpython directory is present, build can continue.', 'green'))
@@ -90,18 +92,20 @@ def dockersection():
         buildimage()
     
     # Run container and start build
-    subprocess.call("docker rm raspiduckyrun >/dev/null 2>/dev/null", shell=True)
+    subprocess.call('docker rm raspiduckyrun >/dev/null 2>/dev/null', shell=True)
 
     print(colored('[+]> Everything went fine, starting firmware build..', 'green'))
     # For some reason the firmware has to be built twice for cp to work
-    subprocess.call(f'docker run --name raspiduckyrun raspiducky', shell=True)
+    id = subprocess.check_output(f'docker run --rm --detach -e b64file={base64_file} raspiducky', shell=True).decode('UTF-8').strip('\n')
+
+    subprocess.call(f'docker exec {id} bash build.sh', shell=True)
 
     # Copy UF2 file
     print(colored('[+]> Looks like the build succeeded, copying the file here...','green'))
-    subprocess.call("docker cp raspiduckyrun:/circuitpython/firmware.uf2 firmware.uf2", shell=True)
+    subprocess.call(f'docker cp {id}:/circuitpython/firmware.uf2 firmware.uf2', shell=True)
 
-    # Remove container before exitting
-    subprocess.call("docker rm raspiduckyrun", shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    print(colored('[+]> Stopping the container...','green'))
+    subprocess.call(f'docker stop {id}', shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
 def duckyscriptsection():
     try:
@@ -134,6 +138,9 @@ def duckyscriptsection():
             h.write(f'\t{line}\n')
         h.write('\tled.value = False')
 
+    with open('code.py', 'rb') as h:
+        return base64.b64encode(h.read()).decode('UTF-8')
+
 def cleanup():
     try:
         os.remove('code.py')
@@ -142,9 +149,8 @@ def cleanup():
 
 def main():
     init()
-    duckyscriptsection()
-    dockersection()
+    dockersection(duckyscriptsection())
     cleanup()
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
