@@ -1,6 +1,0 @@
-{
-    "makefile.extensionOutputFolder": "./.vscode",
-    "cmake.configureOnOpen": false,
-    "rpc.enabled": true,
-    "C_Cpp.dimInactiveRegions": false
-}
